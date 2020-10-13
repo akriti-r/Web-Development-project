@@ -1,0 +1,168 @@
+body{
+background-image: url("../images/addressbar.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+
+}
+
+#neon{
+  color: #000;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+	from {
+    	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  	}
+  	to {
+   	 	text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  	}
+}
+.pf{
+font-family:"Comic Sans MS";
+color:#000000;
+font-size:40px;
+animation: fadeIn ease 1.5s;
+}
+.navbar{
+position:fixed;
+top:0;
+left:35%;
+float:left;
+background-color: #660708;
+}
+.navbar a{
+margin:0 auto;
+float:left;
+display:block;
+color:#f2f2f2;
+text-align:center;
+padding:10px 14px;
+text-decoration:none;
+font-size:25px;
+transition: 0.2s ease;
+}
+
+.navbar a:hover{
+background-color: #e0bbfa;
+color:black;
+}
+.navbar a.active{
+background-color:#c0ffd4;
+color: black;
+}
+footer{
+    font-family:"Comic Sans MS";
+	color: black;
+	text-shadow: 0 1px white;
+	width:100%;
+	position:relative;
+	bottom:0;
+	float:bottom;
+	overflow:hidden;
+}
+.forum{
+float:right;
+position:relative;
+right:10%;
+box-sizing:border-box;
+border-radius:20px;
+z-index:-1;
+background:linear-gradient(#FFFFFF, #fed9b7);
+margin:20px;
+padding:20px;
+box-shadow:0 15px 15px 0 gray;
+animation: fade ease 2s;
+animation-delay: 0.6s;
+}
+@keyframes fade{
+ 	0% {
+ 		opacity: 0;
+  	}
+  	100% {
+    	opacity: 1;
+  	}
+}
+.add{
+float:left;
+position:relative;
+top:20%;
+left:15%;
+bottom:20%;
+}
+h2,p{
+	font-family:"Goudy Old Style";
+	color:#000000;
+	font-size:150%;
+	font-weight:bold;
+	animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0.2;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+h2{
+	font-size:300%;
+	font-weight:bold;
+}
+h1{
+	font-family:"Bahnschrift SemiBold";
+	font-size:40px;
+}
+#name, #email, #number, #msg, #sub{
+	font-familt:Courier;
+	font-size:140%;
+	color:gray;
+	border-radius:10px;
+	box-shadow:0 8px 8px 0 gray; 
+}
+#msg{
+	width:60%;
+	height:150px;
+}
+.LL{
+	font-familt:bahnschrift;
+	font-size:150%;
+}
+/*Media queries*/
+@media screen and (max-width: 992px){
+	.navbar{
+		display:inline-block;
+		top:40px;
+		left:120px;
+		right:120px;
+		z-index:-1;
+	}
+	.navbar a{
+		float:right;
+		width:100%;
+	}
+	.pf{
+		display:block;
+		font-size:30px;
+		text-align:center;
+	}
+	.add, .forum{
+		float:none;
+	}
+	.add{
+		margin-top:180px;
+	}
+	.forum{
+		display:block;
+		right:0;
+	}
+}
+
+
+	
+
+
+

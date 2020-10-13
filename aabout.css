@@ -1,0 +1,144 @@
+body{
+background-image: url('../images/flower.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+}
+.pf{
+font-family:"Comic Sans MS";
+color:#000000;
+font-size:40px;
+animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0.2;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+.head{
+float: right;
+width: 50%;
+padding:40px;
+animation: fadeIn ease 1.5s;
+}
+
+.slide{
+float:left;
+width: 50%;
+padding:10px;
+display:block;
+left:20%;
+animation: fade ease 2s;
+animation-delay: 0.6s;
+}
+
+h1{
+font-family:"Comic Sans MS";
+text-align:center;
+}
+h4{
+font-family:"Brush Script MT";
+text-align:center;
+font-size:200%;
+}
+.myself{
+font-family:Candara;
+text-align:justify;
+font-size:150%;
+}
+footer{
+font-family:"Comic Sans MS";
+	color: black;
+	text-shadow: 0 1px white;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	overflow:hidden;
+}
+.navbar{
+position:fixed;
+top:0;
+left:35%;
+float:left;
+background-color: #660708;
+}
+.navbar a{
+margin:0 auto;
+float:left;
+display:block;
+color:#f2f2f2;
+text-align:center;
+padding:12px 14px;
+text-decoration:none;
+font-size:25px;
+transition: 0.2s ease;
+}
+.navbar a:hover{
+background-color: #e0bbfa;
+color:black;
+}
+.navbar a.active{
+background-color:#c0ffd4;
+color: black;
+}
+.res a{
+	background-color:#2b1b17;
+	display:inline-block;
+	text-align:center;
+	font-size:150%;
+	padding:2px 4px;
+	position:relative;
+	left:20%;
+	color:#FFFFFF;
+}
+.res a:hover{
+	background-color: #e0bbfa;
+    color:black;
+}
+/*Media queries*/
+@media screen and (max-width: 992px){
+	.navbar{
+		display:inline-block;
+		top:40px;
+		left:120px;
+		right:120px;
+		z-index:-1;
+	}
+	.navbar a{
+		float:right;
+		width:100%;
+	}
+    .head{
+		display:block;
+		float:none;
+		width:100%;
+		margin-top:150px;
+	}
+	.slide{
+		display:block;
+		float:none;
+		left:50%;
+		width:250px;
+	}
+	.res a{
+		left:40%;
+	}
+	.pf{
+		display:block;
+		font-size:30px;
+		text-align:center;
+	}
+}
+@media print{
+	.slide{
+		display: none;
+	}
+}
+
+
+
+

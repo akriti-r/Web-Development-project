@@ -1,0 +1,89 @@
+body{
+background-image:url("../images/bgg.jpg");
+background-size:cover;
+animation: bg_animate 75s linear  infinite;
+}
+@keyframes bg_animate{
+0%{background-position:0 0;}
+100%{background-position:-2122px 0;}
+}
+h1{
+font-family:"Avanta Garde";
+font-size:extra-extra-large;
+}
+h1,h4,h3{
+text-align:center;
+color:#000000;
+}
+.intro{
+position: absolute;
+top: 27%;
+left: 27%;
+}
+h3{
+font-family:"Ink Free";
+font-size:500%;
+}
+h4{
+font-family:"Brush Script MT";
+font-size:500%;
+}
+.navbar{
+position:fixed;
+top:0;
+left:35%;
+float:left;
+background-color: #660708;
+}
+.navbar a{
+margin:0 auto;
+float:left;
+display:block;
+color:#f2f2f2;
+text-align:center;
+padding:12px 14px;
+overflow:hidden;
+text-decoration:none;
+font-size:25px;
+transition: 0.2s ease;
+}
+.navbar a:hover{
+background-color: #e0bbfa;
+color:black;
+}
+.navbar a.active{
+background-color:#c0ffd4;
+color: black;
+}
+footer{
+font-family:"Comic Sans MS";
+	color: black;
+	text-shadow: 0 1px white;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	overflow:hidden;
+}
+/*Media queries*/
+@media screen and (max-width: 992px){
+	h3{
+		font-size: 200%;
+		text-align:justify;
+	}
+	.navbar a{
+		float:none;
+		width:100%;
+		padding:8px 10px;
+	}
+	h4{
+	font-size:400%;
+	text-align:center;
+    }
+	h1{text-align:jusify;}
+}
+@media screen and (max-width: 1024px) 
+and (min-width:992px){
+	h3, h1{ font-size:300%;}
+}
+
+

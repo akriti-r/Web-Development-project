@@ -1,0 +1,187 @@
+body{
+	background-color:#00afb9;
+background-size:cover;
+animation-name: example;
+animation-duration: 4s;
+}
+/* The animation code */
+@keyframes example {
+  0%   {background-color:#caffbf; left:0px; top:0px;}
+  25%  {background-color:#9bf6ff; left:200px; top:0px;}
+  50%  {background-color:#ffadad; left:200px; top:200px;}
+  75%  {background-color:#bdb2ff; left:0px; top:200px;}
+  100% {background-color:#ffd6a5; left:0px; top:0px;}
+}
+
+.pf{
+font-family:"Comic Sans MS";
+color:#000000;
+font-size:40px;
+animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0.2;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+.navbar{
+position:fixed;
+top:0;
+left:35%;
+float:left;
+background-color: #660708;
+}
+.navbar a{
+margin:0 auto;
+float:left;
+display:block;
+color:#f2f2f2;
+text-align:center;
+padding:10px 14px;
+text-decoration:none;
+font-size:25px;
+transition: 0.2s ease;
+}
+.navbar a:hover{
+background-color: #e0bbfa;
+color:black;
+}
+.navbar a.active{
+background-color:#c0ffd4;
+color: black;
+}
+h3{
+font-family:"Comic Sans MS";
+font-size:250%;
+color:#000000;
+}
+footer{
+font-family:"Comic Sans MS";
+	color: black;
+	text-shadow: 0 1px white;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	overflow:hidden;
+}
+.container{
+	display:inline-block;
+	flex-direction: row;
+	width:70%;
+	margin: 2px;
+	padding: 2px;
+	text-align: center;
+	box-shadow:0 10px 10px 0 black;
+}
+.items{
+	float: left;
+	width: 100%;
+	min-height: 450px;
+	flex-wrap: wrap;
+	padding: 10px;
+	left: 10px;
+	border-radius: 40px;
+	background:linear-gradient(#c0fdff, #ecbcfd);
+	margin: 10px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	animation: fadeIn ease 1s;
+	box-shadow:0 10px 10px 0 black;
+}
+img{
+	width:20%;
+	height:auto;
+	display:inline;
+	margin:10px;
+	padding:10px;
+}
+
+.quality{
+	float:right;
+	display:inline;
+	position:relative;
+	width:25%;
+	margin:15px;
+	padding:10px;
+	box-sizing:border-box;
+	border-radius: 20px;
+	animation: fadeIn ease 1s;
+	box-shadow:0 10px 10px 0 black;
+	background:linear-gradient(#c0fdff, #ecbcfd);
+}
+h4{
+	font-family:"Comic Sans MS";
+	font-size:150%;
+}
+.aff a{
+	background-color:#2b1b17;
+	display:inline-block;
+	text-align:center;
+	font-family:"Copperplate Gothic Light";
+	font-size:150%;
+	padding:2px 4px;
+	position:relative;
+	left:20%;
+	color:#FFFFFF;
+	animation: pulse 0.7s ease infinite alternate;
+}
+@keyframes pulse{
+	0% {
+		transform: scale(0.8);
+		border-color: red;
+	}
+	100% {
+		transform: scale(1);
+		border-color: yellow;
+	}
+}
+.aff a:hover{
+	background-color: #e0bbfa;
+    color:black;
+}
+/*Media queries*/
+@media screen and (max-width: 992px){
+	.navbar{
+		display:inline-block;
+		top:40px;
+		left:120px;
+		right:120px;
+	}
+	.navbar a{
+		float:right;
+		width:100%;
+	}
+	.pf{
+		display:block;
+		font-size:30px;
+		text-align:center;
+	}
+	img{
+		width:50%;
+	}
+	.quality{
+		float:none;
+		display:block;
+		width:70%;
+		left:60px;
+	}
+	.aff a{
+		text-align:center;
+		left:140px;
+		margin-bottom:40px;
+	}
+	.container{
+		margin-top:40%;
+		display:block;
+		left:0;
+		float:none;
+		width:95%;
+	}
+}
+

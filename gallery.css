@@ -1,0 +1,53 @@
+body{
+background-image: url("../images/bgg.jpg");
+background-repeat: repeat;
+background-size: 100%;
+}
+img{
+width:25%;
+padding:2px;
+margin:60px;
+box-shadow:0 20px 20px 0 black;
+}
+#first, #second{
+font-family:"Brush Script MT";
+text-align:center;
+font-size:300%;
+color:#000;
+}
+h1{
+font-family:"Comic Sans MS";
+box-sizing:border-box;
+background-color:#FFF;
+display:inline-block;
+margin:30px;
+padding:20px;
+position:relative;
+left:40%;
+border-radius:50px;
+box-shadow: 0 15px 15px 0 black;
+color:#000;
+}
+/*Media queries*/
+@media screen and (max-width: 992px){
+	h1{
+		dsiplay:block;
+		left:20%;
+	}
+	img{
+		width:70%;
+		margin:15px;
+		margin-left:80px;
+		left:20%;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
